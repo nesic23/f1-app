@@ -1,0 +1,45 @@
+.consTable {
+  color: white;
+  text-align: center;
+  background: url("https://i.ytimg.com/vi/4CTXT90IFgQ/maxresdefault.jpg");
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+
+.consTable th {
+  height: 40px;
+  text-align: left;
+  color: rgb(240, 35, 35);
+}
+
+.consTable td {
+  text-align: left;
+  padding: 4px;
+}
+
+td:first-child {
+  text-align: center;
+}
+
+th:first-child {
+  text-align: center;
+}
+
+.consTable tr:nth-child(even) {
+  background-color: rgba(48, 44, 44, 0.733);
+}
+
+h1 {
+  color: white;
+  padding-bottom: 10px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(240, 35, 35);
+}

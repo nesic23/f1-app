@@ -1,0 +1,10 @@
+.nav {
+  width: 90%;
+  margin-left: 400px;
+}
+
+.nav a {
+  padding: 8px 16px;
+  font-size: 20px;
+  float: left;
+}

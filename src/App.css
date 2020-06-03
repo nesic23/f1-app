@@ -1,0 +1,42 @@
+body {
+  background-image: url("https://images5.alphacoders.com/317/317664.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+  background-color: rgb(136, 136, 136);
+  font-family: "F1BoldRegular", Helvetica, sans-serif;
+}
+
+#app {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 20px 0 10px 0;
+}
+
+.yearSelect select {
+  position: relative;
+  padding: 5px;
+  margin-top: 20px;
+  float: right;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 4px;
+  background-color: transparent;
+  border: none;
+}
+
+#logo {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: absolute;
+  float: left;
+}

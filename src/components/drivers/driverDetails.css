@@ -1,0 +1,12 @@
+.driverDetail {
+  width: 250px;
+  margin-top: 30px;
+  background-color: rgb(126, 37, 37);
+  border-radius: 10%;
+  color: white;
+  padding: 5px;
+}
+
+#avatar {
+  border-radius: 40%;
+}
