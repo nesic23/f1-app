@@ -19,6 +19,14 @@
   padding: 4px;
 }
 
+.raceTable td:nth-child(2) {
+  text-align: left;
+}
+
+.raceTable th:nth-child(2) {
+  text-align: left;
+}
+
 .raceTable tr:nth-child(even) {
   background-color: rgba(48, 44, 44, 0.733);
 }

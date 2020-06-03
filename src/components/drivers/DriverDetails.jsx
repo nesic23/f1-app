@@ -63,9 +63,7 @@ const DriverDetails = (props) => {
             </div>
           </div>
         ))}
-        <div>
-          <RaceResuts driverId={driverId} seasonYear={props.seasonYear} />
-        </div>
+        <RaceResuts driverId={driverId} seasonYear={props.seasonYear} />
       </div>
     );
   }

@@ -65,7 +65,13 @@ const RaceSchedule = (props) => {
                       src={require(`./../../assets/flags/${race.Circuit.Location.country}.png`)}
                       alt="flag"
                     />
-                    {race.raceName}
+                    <a
+                      href={race.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {race.raceName}
+                    </a>
                   </td>
                   <td>{race.date}</td>
                   <td>{race.Circuit.circuitName}</td>

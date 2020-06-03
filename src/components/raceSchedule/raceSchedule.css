@@ -1,6 +1,6 @@
 .raceTable {
   color: white;
-  text-align: center;
+  /* text-align: center; */
   background: url("https://i.ytimg.com/vi/4CTXT90IFgQ/maxresdefault.jpg");
   background-size: cover;
   border: none;
@@ -19,12 +19,12 @@
   padding: 4px;
 }
 
-td:first-child {
-  text-align: center;
+.raceTable td:nth-child(2) {
+  float: left;
 }
 
-th:first-child {
-  text-align: center;
+.raceTable th:nth-child(2) {
+  text-align: left;
 }
 
 .raceTable tr:nth-child(even) {

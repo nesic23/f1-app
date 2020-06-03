@@ -48,6 +48,7 @@ const RaceWinners = (props) => {
           <Table className="raceTable">
             <thead>
               <tr>
+                <th>Round</th>
                 <th>Circuit</th>
                 <th>Winner</th>
                 <th>Constructor</th>
@@ -60,6 +61,7 @@ const RaceWinners = (props) => {
             <tbody>
               {results.map((race) => (
                 <tr key={race.Circuit.circuitId}>
+                  <td>{race.round}</td>
                   <td>
                     <img
                       src={require(`../../assets/flags/${race.Circuit.Location.country}.png`)}

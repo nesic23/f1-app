@@ -3,6 +3,7 @@
   background: url("https://i.ytimg.com/vi/4CTXT90IFgQ/maxresdefault.jpg");
   background-size: cover;
   border: none;
+  float: left;
 }
 
 .raceTable th {
@@ -18,12 +19,12 @@
   padding: 4px;
 }
 
-.raceTable th:first-child {
-  align-items: left;
+.raceTable th:nth-child(2) {
+  text-align: left;
 }
 
-.raceTable td:first-child {
-  align-items: left;
+.raceTable td:nth-child(2) {
+  text-align: left;
 }
 
 .raceTable tr:nth-child(even) {

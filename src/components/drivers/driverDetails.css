@@ -1,10 +1,11 @@
 .driverDetail {
+  height: 200px;
   width: 250px;
-  margin-top: 30px;
-  background-color: rgb(126, 37, 37);
-  border-radius: 10%;
+  padding: 25px;
+  /* margin-top: 30px; */
+  background-color: transparent;
+  border-radius: 30%;
   color: white;
-  padding: 5px;
 }
 
 #avatar {
