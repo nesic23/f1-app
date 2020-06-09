@@ -16,7 +16,6 @@ const DriverDetails = (props) => {
       .then((res) => {
         setIsLoaded(true);
         setDrivers(res.data.MRData.DriverTable.Drivers);
-        console.log(res);
       })
       .catch((err) => {
         console.log(err);
