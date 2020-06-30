@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Loader from "../../Loader";
 import "./driverDetails.css";
-import RaceResuts from "../raceResults/RaceResults";
+import RaceResults from "../raceResults/RaceResults";
 
 const DriverDetails = (props) => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -62,7 +62,7 @@ const DriverDetails = (props) => {
             </div>
           </div>
         ))}
-        <RaceResuts driverId={driverId} seasonYear={props.seasonYear} />
+        <RaceResults driverId={driverId} seasonYear={props.seasonYear} />
       </div>
     );
   }
