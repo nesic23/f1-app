@@ -1,8 +1,8 @@
 .raceTable {
   color: white;
   text-align: left;
-  background: url("https://i.ytimg.com/vi/4CTXT90IFgQ/maxresdefault.jpg");
-  background-size: cover;
+  background: url("../../assets//tableBckgr.jpg");
+  background-size: auto;
   border: none;
 }
 

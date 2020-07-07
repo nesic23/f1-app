@@ -9,20 +9,6 @@ const ConstructorStandings = (props) => {
   const [standings, setStandings] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`https://ergast.com/api/f1/current/constructorStandings.json`)
-      .then((res) => {
-        setStandings(
-          res.data.MRData.StandingsTable.StandingsLists[0].ConstructorStandings
-        );
-        setIsLoaded(true);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
-
-  useEffect(() => {
     let mounted = true;
     axios
       .get(
@@ -49,7 +35,7 @@ const ConstructorStandings = (props) => {
           <h1>{props.seasonYear} Constructor Standings</h1>
         </div>
         <div>
-          <Table className="consTable">
+          <Table responsive className="consTable">
             <thead>
               <tr>
                 <th>Position</th>

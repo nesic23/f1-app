@@ -1,8 +1,7 @@
 .driversTable {
   color: white;
-  text-align: center;
-  background: url("https://i.ytimg.com/vi/4CTXT90IFgQ/maxresdefault.jpg");
-  background-size: cover;
+  background: url("../../assets//tableBckgr.jpg");
+  background-size: auto;
   border: none;
 }
 
@@ -27,6 +26,14 @@ th:first-child {
   text-align: center;
 }
 
+td:last-child {
+  text-align: center;
+}
+
+th:last-child {
+  text-align: center;
+}
+
 .driversTable tr:nth-child(even) {
   background-color: rgba(48, 44, 44, 0.733);
 }
@@ -43,7 +50,7 @@ a:hover {
 h1 {
   text-align: center;
 }
-
+/* 
 td img {
   float: center;
-}
+} */

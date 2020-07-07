@@ -1,7 +1,7 @@
 .consTable {
   color: white;
-  text-align: center;
-  background: url("https://i.ytimg.com/vi/4CTXT90IFgQ/maxresdefault.jpg");
+  text-align: left;
+  background: url("../../assets//tableBckgr.jpg");
   background-size: cover;
   background-position: center;
   border: none;

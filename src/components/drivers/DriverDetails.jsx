@@ -29,15 +29,6 @@ const DriverDetails = (props) => {
       <div>
         {drivers.map((driver) => (
           <div key={driver.driverId} className="driverDetail">
-            <div className="image">
-              {/* <img
-                id="avatar"
-                alt="avatar"
-                src={require(`./../../assets/avatar.png`)}
-                width="100px"
-                height="100px"
-              /> */}
-            </div>
             <div className="content">
               <h3 className="header">
                 {driver.givenName} {driver.familyName}

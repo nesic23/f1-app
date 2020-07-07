@@ -48,7 +48,7 @@ const DriverStandings = (props) => {
           <h1>{props.seasonYear} Drivers Standings</h1>
         </div>
         <div>
-          <Table className="driversTable">
+          <Table responsive className="driversTable">
             <thead>
               <tr>
                 <th>Position</th>

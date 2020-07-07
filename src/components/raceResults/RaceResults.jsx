@@ -28,7 +28,7 @@ const RaceResults = (props) => {
     return (
       <div>
         <h1>{props.seasonYear} Season Results</h1>
-        <Table className="raceTable">
+        <Table responsive className="raceTable">
           <thead>
             <tr>
               <th>Round</th>

@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://images5.alphacoders.com/317/317664.jpg");
+  background-image: url("./assets/317664.jpg");
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -11,8 +11,8 @@ body {
 }
 
 #app {
-  max-width: 850px;
-  margin: 0 auto;
+  max-width: 1000px;
+  /* margin: 0 auto; */
 }
 
 nav {
@@ -20,23 +20,23 @@ nav {
 }
 
 .yearSelect select {
-  position: relative;
+  /* position: relative; */
   padding: 5px;
-  margin-top: 20px;
+  margin-top: 60px;
   float: right;
   color: red;
   font-size: 20px;
   text-align: center;
-  letter-spacing: 3px;
-  line-height: 4px;
+  letter-spacing: 4px;
+  line-height: 8px;
   background-color: transparent;
   border: none;
 }
 
 #logo {
+  margin-top: 10px;
   width: 200px;
   height: 200px;
   display: block;
   position: absolute;
-  float: left;
 }

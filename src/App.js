@@ -14,7 +14,7 @@ import DriverDetails from "./components/drivers/DriverDetails";
 import PageNotFound from "./PageNotFound";
 
 const App = () => {
-  const [seasonYear, setSeasonYear] = useState("2019");
+  const [seasonYear, setSeasonYear] = useState("2020");
   const [driverId] = useState("");
 
   const handleYearChange = (event) => {
@@ -23,23 +23,21 @@ const App = () => {
 
   const getYears = () => {
     const years = [];
-    for (let year = 2019; year >= 1950; year--) years.push(year);
+    for (let year = 2020; year >= 1950; year--) years.push(year);
     return years;
   };
 
   return (
-    <Container>
-      <div className="App container-fluid">
+    <div>
+      <Container>
         <Row>
-          <Col xs={12} sm={8} lg={3}>
+          <Col xs={2} sm={4} lg={12}>
             {" "}
-            <img
-              src="https://purepng.com/public/uploads/medium/purepng.com-formula-1-logoformula-1logonew2018-21529676510lxzg5.png"
-              alt="logo"
-              id="logo"
-            />
+            <img src={require("./assets/logo.png")} alt="logo" id="logo" />
           </Col>
-          <Col xs={12} sm={10} lg={6}>
+        </Row>
+        <Row>
+          <Col xs={10} sm={12} md={12} lg={12}>
             <form className="yearSelect">
               <select size="2" value={seasonYear} onChange={handleYearChange}>
                 {getYears().map((year) => (
@@ -53,9 +51,7 @@ const App = () => {
         </Row>
         <Row>
           <main>
-            <Col xs={12} sm={10} md={8} lg={10}>
-              <NavBar />
-            </Col>
+            <NavBar />
             <Switch>
               <Route
                 exact
@@ -103,13 +99,12 @@ const App = () => {
                   />
                 )}
               />
-
               <Route component={PageNotFound} />
             </Switch>
           </main>
         </Row>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 };
 

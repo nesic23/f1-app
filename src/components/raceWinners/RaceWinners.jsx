@@ -2,25 +2,11 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Table from "react-bootstrap/Table";
 import Loader from "../../Loader";
-// import RaceResults from "./../raceResults/RaceResults";
 import "./raceWinners.css";
-// import { Link } from "react-router-dom";
 
 const RaceWinners = (props) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [results, setResults] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get(`http://ergast.com/api/f1/current/results/1.json`)
-      .then((res) => {
-        setIsLoaded(true);
-        setResults(res.data.MRData.RaceTable.Races);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
 
   useEffect(() => {
     let mounted = true;
@@ -45,7 +31,7 @@ const RaceWinners = (props) => {
           <h1>{props.seasonYear} Race Winners</h1>
         </div>
         <div>
-          <Table className="raceTable">
+          <Table responsive className="raceTable">
             <thead>
               <tr>
                 <th>Round</th>

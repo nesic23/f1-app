@@ -9,18 +9,6 @@ const RaceSchedule = (props) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    axios
-      .get(`http://ergast.com/api/f1/current.json`)
-      .then((res) => {
-        setRaces(res.data.MRData.RaceTable.Races);
-        setIsLoaded(true);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
-
-  useEffect(() => {
     let mounted = true;
     axios
       .get(`http://ergast.com/api/f1/${props.seasonYear}.json`)
@@ -44,7 +32,7 @@ const RaceSchedule = (props) => {
           <h1>{props.seasonYear} Race Schedule</h1>
         </div>
         <div>
-          <Table className="raceTable">
+          <Table responsive className="raceTable">
             <thead>
               <tr>
                 <th>Round</th>
