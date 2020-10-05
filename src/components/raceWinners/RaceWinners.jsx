@@ -11,7 +11,7 @@ const RaceWinners = (props) => {
   useEffect(() => {
     let mounted = true;
     axios
-      .get(`http://ergast.com/api/f1/${props.seasonYear}/results/1.json`)
+      .get(`https://ergast.com/api/f1/${props.seasonYear}/results/1.json`)
       .then((res) => {
         if (mounted) setIsLoaded(true);
         setResults(res.data.MRData.RaceTable.Races);

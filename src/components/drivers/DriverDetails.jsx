@@ -12,7 +12,7 @@ const DriverDetails = (props) => {
 
   useEffect(() => {
     axios
-      .get(`http://ergast.com/api/f1/drivers/${driverId}.json`)
+      .get(`https://ergast.com/api/f1/drivers/${driverId}.json`)
       .then((res) => {
         setIsLoaded(true);
         setDrivers(res.data.MRData.DriverTable.Drivers);

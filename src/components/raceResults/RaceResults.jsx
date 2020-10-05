@@ -11,7 +11,7 @@ const RaceResults = (props) => {
   useEffect(() => {
     axios
       .get(
-        `http://ergast.com/api/f1/${props.seasonYear}/drivers/${props.driverId}/results.json`
+        `https://ergast.com/api/f1/${props.seasonYear}/drivers/${props.driverId}/results.json`
       )
       .then((res) => {
         setIsLoaded(true);
