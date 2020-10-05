@@ -46,7 +46,7 @@ const RaceWinners = (props) => {
             </thead>
             <tbody>
               {results.map((race) => (
-                <tr key={race.Circuit.circuitId}>
+                <tr key={race.round}>
                   <td>{race.round}</td>
                   <td>
                     <img

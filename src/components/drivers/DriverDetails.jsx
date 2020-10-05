@@ -24,7 +24,7 @@ const DriverDetails = (props) => {
 
   if (!isLoaded) {
     return <Loader />;
-  } else {
+  } else {    
     return (
       <div>
         {drivers.map((driver) => (
